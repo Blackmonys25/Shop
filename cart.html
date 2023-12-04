@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body class="font-['DM_Sans'] mx-5">
+    <header>
+        <div class="flex justify-between pt-5  w-full border-t-2">
+            <div>
+                <a href="index.html"><img class="pl-5 pb-2 z-50" src="img/logo-regular.png" alt=""></a>
+            </div>
+            <nav class="hidden md:block space-x-5  pt-2">
+                <ul class="flex space-x-5">
+                    <li><a class="menu-active" href="shop_all.html">SHOP ALL</a></li>
+                    <li><a class="menu-active" href="makeup.html">MAKEUP</a></li>
+                    <li><a class="menu-active" href="SkinCare.html">SKIN CARE</a></li>
+                    <li><a class="menu-active" href="HairCare.html">HAIR CARE</a></li>
+                    <li><a class="menu-active" href="about.html">ABOUT</a></li>
+                    <li><a class="menu-active" href="contacts.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="hidden md:flex pr-5 space-x-3 pt-2">
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                    </svg></a>
+                <a class="flex gap-2" href="cart.html"><span class="hidden-element">Товаров в корзине на сумму</span>$205<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                    </svg></a>
+            </div>
+    
+            <button class="block md:hidden pl-20 pt-1 md:pr-0 focus:outline-none z-40">
+    
+                <span class="text-3xl cursor-pointer md:hidden block">
+                    <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                </span>
+    
+                <ul
+                    class="md:flex md:flex-col md:items-center z-[-1] md:z-auto md:static absolute bg-gray-200 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-0
+                    md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 text-3xl pt-[85px] font-bold rounded-b-xl">
+                    <li class="menu-mobile"><a class=""
+                            href="index.html">MAIN</a></li>
+                    <li class="menu-mobile"><a class=""
+                            href="cart.html">ORDER</a></li>
+                    <li class="menu-mobile"><a class=""
+                            href="shop_all.html">SHOP ALL</a></li>
+                    <li class="menu-mobile"><a class=""
+                            href="makeup.html">MAKEUP</a></li>
+                    <li class="menu-mobile"><a class=""
+                            href="SkinCare.html">SKIN CARE</a></li>
+                    <li class="menu-mobile"><a class=""
+                            href="HairCare.html">HAIR CARE</a></li>
+                    <li class="menu-mobile"><a class=""
+                            href="about.html">ABOUT</a></li>
+                    <li class="menu-mobile"><a class="" href="contacts.html">CONTACT</a></li>
+                </ul>
+            </button>
+    
+    
+        </div>
+    </header>
+        <main class="w-full md:">
+            <section>
+                <div>
+                    <div>
+                        <div
+                            class="  text-black text-5xl md:text-7xl text-center py-12 md:py-8 ">
+                            <h1 class="pt-[6.5rem] md:pt-0">CHECKOUT</h1>
+                        </div>
+                    </div>
+                    <div class="pl-0 md:pl-[11rem] flex flex-col md:flex-row md:flex">
+                        <div
+                            class="border-4 border-[#a46177] rounded-xl container w-full md:w-[750px]  px-0 md:px-20 pl-0 md:pl-28 mr-0 md:mr-20 mt-10">
+                            <div class="border-4 border-[#a46177] rounded-xl my-5 pl-10">
+                                <div class="text-3xl py-5 font-bold">
+                                    <h1>BASIC INFO</h1>
+                                </div>
+                                <form action="" method="get" class="">
+                                    <fieldset class="flex flex-col gap-6 pr-[2.5rem] pb-5">
+                                    <input class="form-info" type="email" required minlength="3" placeholder="Your email" name="" id="">
+                                    <input class="form-info" type="text" name="" placeholder="First Name" id="">
+                                    <input class="form-info" type="text" name="" placeholder="Last Name" id="">
+                                    <input class="form-info" type="number" required minlength="6" name="" placeholder="Number" id="">
+                                    <input class="form-info" type="text" required name="" placeholder="Address" id="">
+                                    <input class="form-info" type="text" required name="" placeholder="City" id="">
+                                    <input class="form-info" type="text" required name="" placeholder="Country" id="">
+                                    </fieldset>
+                            </div>
+                            <div class="border-4 border-[#a46177] rounded-xl my-5 pl-10">
+                                <div class="bg-white mr-[2.5rem] rounded-2xl">
+                                    <div class="text-3xl border-b-2 py-3  font-bold pt-3 text-center">
+                                        <h1>SHIPPING</h1>
+                                    </div>
+                                    <fieldset>
+                                    <div class="flex text-lg md:text-2xl font-medium pt-3">
+                                        <input checked class="ml-2 mr-4" type="checkbox" name="" id="">
+                                        <p class="pr-[3.2rem]">UPS Express 2-3 working days</p>
+                                        <p class="pr-3 md:pr-3">$49.99</p>
+                                    </div>
+                                    <div class="flex text-lg md:text-2xl pt-5 font-medium pb-5 mb-6">
+                                        <input class="ml-2 mr-4" type="checkbox" name="" id="">
+                                        <p class="pr-16">UPS Standard 2-3 working days</p>
+                                        <p class="pr-3 md:pr-3">$20</p>
+                                    </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="border-4 border-[#a46177] rounded-xl my-5 pl-10">
+                                <div class="bg-white mr-[2.5rem] rounded-2xl mb-6">
+                                    <div class="text-3xl border-b-2 py-3  font-bold pt-3 text-center ">
+                                        <h1>PAYMENT</h1>
+                                    </div>
+                                    <div class="" action="cart.html" method="get">
+                                        <fieldset class="space-y-5 flex flex-col">
+                                            <label class="pl-6 mt-2" for="card">CREDIT CARD</label>
+                                            <input class="form-info" type="number" required minlength="6" name="" placeholder="Card Number" id="card">
+                                            <input class="form-info" type="password" required name="" placeholder="CVC / CVV" id="">
+                                            <input class="form-info" type="date" required name="" placeholder="Expiry Date" id="">
+                                            <button type="submit" class=" border-2 bg-[#a46177] text-white font-bold text-[1rem] md:text-2xl py-2 px-8 rounded-xl hover:bg-black duration-500">Complete Payment</button>
+                                        </fieldset>
+                                        </div>
+                                </form>
+                                </div>
+                                <div class="text-center py-10 pr-10 md:pr-0">
+                                    <p class="pt-10 font-medium pr-10 ">By placing your order you agree to our Terms & Conditions
+                                        and you understand that we will
+                                        process your personal data on the basis of our Privacy Policy. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" rounded-xl container w-full md:w-[550px] bg-white pl-0  mt-10 border-4 border-[#a46177]">
+                            <div class=" my-5 pl-10">
+                                <div class="bg-white mr-[2.5rem]  mb-6 flex border-y-4 border-[#a46177] rounded-xl">
+                                    <div class="text-xl py-3  font-bold pt-3 ">
+                                        <img class="w-full md:w-[200px] pt-9 md:pt-0 rounded-full" src="img/2.jpg" alt="">
+                                    </div>
+                                    <div class="text-xl md:text-3xl pl-8 pt-12">
+                                        <p class="pt-2">Product Name 1</p>
+                                        <p class="pt-2">Hair Care</p>
+                                        <p class="pt-2 ">$59</p>
+                                        <div class=" ">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white mr-[2.5rem]  mb-6 flex mt-14  border-y-4 border-[#a46177] rounded-xl">
+                                    <div class="text-xl py-3  font-bold pt-3 ">
+                                        <img class="w-full md:w-[200px] pt-9 md:pt-0 rounded-full" src="img/1.jpg" alt="">
+                                    </div>
+                                    <div class="text-xl md:text-3xl font- pl-8 pt-12">
+                                        <p class="pt-2">Product Name 1</p>
+                                        <p class="pt-2">Hair Care</p>
+                                        <p class="pt-2">$59</p>
+                                        <div class=" ">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white mr-[2.5rem]  mb-6 flex mt-14  border-y-4 border-[#a46177] rounded-xl">
+                                    <div class="text-xl py-3  font-bold pt-3 pl-5">
+                                        <img class="" src="img/ship.png" alt="">
+                                    </div>
+                                    <div class="text-2xl md:text-3xl pb-2 pl-8 flex pt-3">
+                                        <p class="hidden md:block pt-2 text-3xl pr-5">Shipping & handling</p>
+                                        <p class="block md:hidden pt-2 text-2xl md:text-3xl pr-5">Shipping</p>
+                                        <p class="pt-2">$25.00</p>
+                                    </div>
+                                </div>
+                                <div class="bg-white mr-[2.5rem]  mb-6 flex mt-14  border-y-4 border-[#a46177] rounded-xl">
+                                    <div class="text-xl py-3  font-bold pt-3 pl-5">
+                                        <img class="pl-1" src="img/tax.svg" alt="">
+                                    </div>
+                                    <div class="text-2xl md:text-3xl pb-2 pl-8 flex pt-3">
+                                        <p class="pt-2 text-2xl md:text-3xl pr-5">TAX</p>
+                                        <p class="pt-2">$12.00</p>
+                                    </div>
+                                </div>
+                                <div class="bg-white mr-[2.5rem]  mb-6 hidden md:flex mt-14  border-y-4 border-[#a46177] rounded-x">
+                                    <div class="text-3xl  pl-8 pt-3">
+                                        <p class="pt-2 text-3xl pb-3 pr-[8.5rem] md:pr-0 pl-0 md:pl-8 text-center">Apply Coupon
+                                        </p>
+                                        <div class="pl-0 md:pl-9 mb-7 pr-[8.5rem] md:pr-0">
+                                            <input class="form-info ml-5" type="text" placeholder="Coupon Code"
+                                                name="" id="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="text-4xl md:text-5xl text-center py-5 mt-20 text-white font-bold mr-8 rounded-xl bg-[#a46177]">
+                                    <h1>$205</h1>
+                                    <p>Grand Total</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+                <footer class="bg-[#f6edf0] mb-5 w-full">
+                    <div class="bg-[#f6edf0] py-10 border-b-2 border-red-100 mt-7 w-full">
+                        <div class=" flex flex-col md:flex-row md:justify-evenly ">
+                            <div>
+                                <p class="text-2xl pt-7 pb-10 md: ">Subscribe to our newsletter</p>
+                            </div>
+                            <form class="flex items-center">
+                                <label class="" for="email"><span class="hidden-element">Ваша почта</span></label>
+                                <input class="w-[200px] md:w-[400px] py-1.5 pl-2 text-xl mb-0 ml-4 md:ml-0" required minlength="6" type="email"
+                                    placeholder="Your email address" name="mail" id="email">
+        
+                                    <button class="bg-black text-white rounded-sm px-4 py-2 text-base hover:bg-[#d4a6b6] duration-300" type="submit">SUBSCRIBE</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row  py-5 border-b-2 border-red-100 space-x-28 md:pl-[20rem]">
+                        <div class="pr-[25.5rem]">
+                            <img src="img/logo-regular.png" alt="">
+                        </div>
+                        <div class="pb-10 md:pb-0">
+                    <ul>
+                        <li><a class="footer-menu"  href="">Shop all</a></li>
+                        <li><a class="footer-menu" href="">Makeup</a></li>
+                        <li><a class="footer-menu" href="">Skin care</a></li>
+                        <li><a class="footer-menu" href="">Hair care</a></li>
+                        <li><a class="footer-menu" href="">About</a></li>
+                        <li><a class="footer-menu" href="">Contact</a></li>
+                    </ul>
+                        </div>
+                        <div class="pb-10 md:pb-0">
+                    <ul>
+                        <li><a class="footer-menu"  href="">Refund Policy</a></li>
+                        <li><a class="footer-menu" href="">Terms & Conditions</a></li>
+                        <li><a class="footer-menu" href="">FAQ</a></li>
+                        <li><a class="footer-menu" href="">Privacy Policy</a></li>
+                    </ul>
+                        </div>
+                        <div class="flex">
+                            <a href=""><img class="w-[25px]" src="img/facebook-svgrepo-com.svg" alt=""></a>
+                            <a href=""><img class="w-[25px]" src="img/twitter-154-svgrepo-com.svg" alt=""></a>
+                            <a href=""><img class="w-[25px]" src="img/insta-svgrepo-com.svg" alt=""></a>
+                
+                        </div>
+                    </div>
+                    <div>
+                        <p class="font-extralight text-gray-800 md:pl-[20rem] py-5">Copyright © 2023 <del>Be Bold</del> BLMS | Powered
+                            by <del>Be Bold</del> BLMS</p>
+                    </div>
+                </footer>
+
+
+
+
+
+        <script>
+            function Menu(e) {
+                let list = document.querySelector('ul');
+                e.name === 'menu' ? (e.name = "close", list.classList.add('top-[0px]'), list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+            }
+        </script>
+</body>
+</html>

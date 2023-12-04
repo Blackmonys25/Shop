@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body class="font-['DM_Sans'] mx-5">
+    <header>
+        <div class="flex justify-between pt-5  w-full border-y-2">
+            <div>
+                <a href="index.html"><img class="pl-5 pb-2 z-50" src="img/logo-regular.png" alt=""></a>
+            </div>
+            <div class="hidden md:block space-x-5  pt-2">
+                <a class="hover:text-[#a46177] hover:border-t-2 hover:border-[#a46177] pt-[30px] duration-300"
+                    href="shop_all.html">SHOP
+                    ALL</a>
+                <a class="hover:text-[#a46177] hover:border-t-2 hover:border-[#a46177] pt-[30px] duration-300"
+                    href="makeup.html">MAKEUP</a>
+                <a class="hover:text-[#a46177] hover:border-t-2 hover:border-[#a46177] pt-[30px] duration-300"
+                    href="SkinCare.html">SKIN
+                    CARE</a>
+                <a class="hover:text-[#a46177] hover:border-t-2 hover:border-[#a46177] pt-[30px] duration-300"
+                    href="HairCare.html">HAIR
+                    CARE</a>
+                <a class="hover:text-[#a46177] hover:border-t-2 hover:border-[#a46177] pt-[30px] duration-300"
+                    href="about.html">ABOUT</a>
+                <a class="hover:text-[#a46177] hover:border-t-2 hover:border-[#a46177] pt-[30px] duration-300"
+                    href="contacts.html">CONTACT</a>
+            </div>
+            <div class="hidden md:flex pr-5 space-x-3 pt-2">
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                    </svg></a>
+                <a href="">$0.00</a>
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                    </svg></a>
+            </div>
+
+            <button class="block md:hidden pl-20 pr-3 pt-1 md:pr-0 focus:outline-none z-40">
+
+                <span class="text-3xl cursor-pointer md:hidden block">
+                    <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                </span>
+
+                <ul
+                    class="md:flex md:flex-col md:items-center z-[-1] md:z-auto md:static absolute bg-gray-200 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-0
+                    md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 text-3xl pt-[85px] font-bold rounded-b-xl">
+                    <li class="py-3 border-b-2 border-white"><a class="hover:bg-gray-200 px-6 w-full"
+                            href="shop_all.html">SHOP
+                            ALL</a></li>
+                    <li class="py-3 border-b-2 border-white"><a class="hover:bg-gray-200 px-6 w-full"
+                            href="makeup.html">MAKEUP</a></li>
+                    <li class="py-3 border-b-2 border-white"><a class="hover:bg-gray-200 px-6 w-full"
+                            href="SkinCare.html">SKIN CARE</a></li>
+                    <li class="py-3 border-b-2 border-white"><a class="hover:bg-gray-200 px-6 w-full"
+                            href="HairCare.html">HAIR CARE</a></li>
+                    <li class="py-3 border-b-2 border-white"><a class="hover:bg-gray-200 px-6 w-full"
+                            href="about.html">ABOUT</a></li>
+                    <li class="py-3"><a class="hover:bg-gray-200 px-6 w-full " href="contacts.html">CONTACT</a></li>
+                </ul>
+            </button>
+
+
+        </div>
+    </header>
+    <main class="">
+        <section class=" mx-auto pb-0 md:pb-0 pt-28 ">
+            <div class="container w-full flex flex-col md:flex-row  md:space-x-32  ">
+                <div class=" pl-0 md:pl-[16rem]  font-extralight">
+                    <a class="absolute ml-4 mt-4 py-1 px-4 bg-white rounded-full text-sm shadow-md shadow-gray-300"
+                        href="">Sale!</a>
+                    <img class="w-full md:w-[550px]" src="img/PR7/product(7)-100x100_2.jpg" alt="">
+                    <div class="flex justify-between pt-3 ">
+                        <img class="w-[75px] md:w-[125px] opacity-50 hover:opacity-100 duration-300"
+                            src="img/PR7/product(7)-100x100_2.jpg" alt="">
+                        <img class="w-[75px] md:w-[125px] opacity-50 hover:opacity-100 duration-300"
+                            src="img/PR7/product(7)-100x100_3.jpg" alt="">
+                        <img class="w-[75px] md:w-[125px] opacity-50 hover:opacity-100 duration-300"
+                            src="img/PR7/product(7)-100x100_4.jpg" alt="">
+                        <img class="w-[75px] md:w-[125px] opacity-50 hover:opacity-100 duration-300"
+                            src="img/PR7/product(7)-100x100_5.jpg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="flex  text-gray-400 pb-3 pt-5 md:pt-0">
+                        <a href="">Home/</a>
+                        <a href="">Hair Care/</a>
+                        <p>Product Name 1</p>
+                    </div>
+                    <a href="">Hair Care</a>
+                    <h1 class="text-4xl pb-3">Product Name 6</h1>
+                    <p class="text-2xl font-black"><del class="text-gray-500 font-normal">$75.00</del> $59 <span
+                            class="text-gray-500 font-normal">& Free Shipping</span></p>
+
+                    <p class="w-full md:w-[400px] pt-3 text-gray-500">Ut quis sollicitudin orci. Aliquam at libero non
+                        purus sodales sagittis eu ac neque. Nunc ipsum felis, vehicula eu
+                        aliquam sed, ultricies ac lacus. Vestibulum ante ipsum primis in faucibus orci luctus et
+                        ultrices posuere cubilia curae;
+                        Nam viverra commodo finibus. Morbi laoreet lacus quis lobortis tempor. Nam tincidunt, lectus a
+                        suscipit fringilla,
+                        mauris turpis dapibus dolor, eu venenatis diam nibh id massa.
+
+                        Nulla eget tortor ultrices, ultricies turpis a, accumsan turpis. Quisque dignissim semper leo ac
+                        accumsan. Quisque est
+                        nisl, bibendum ut elit quis, pellentesque vehicula tellus. Sed luctus mattis ante ac posuere.
+                    </p>
+                    <div class="pt-5 border-b-2 pb-3 border-red-200">
+                        <a class="border-2 border-black py-2 px-4 hover:bg-black hover:text-white duration-300"
+                            href="#">-</a>
+                        <input class="border-2 border-black py-[6.5px] w-[41px] text-center" type="number"
+                            placeholder="1" name="" id="">
+                        <a class="border-2 border-black py-2 px-4 hover:bg-black hover:text-white duration-300"
+                            href="#">+</a>
+                        <a class="bg-black text-white rounded-sm px-4 py-2.5 text-base hover:bg-[#d4a6b6] duration-300 ml-4"
+                            href="">ADD TO CART</a>
+                    </div>
+                    <div class="flex pt-2 font-extralight">
+                        <p>Category:</p>
+                        <a href="">Hair Care</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class=" pt-10">
+            <div class="container w-full  ">
+                <div class="flex ml-0 md:ml-[16rem] mt-6 border-t-2 space-x-3 border-red-200 pt-3 font-medium ">
+                    <a class="" href="">Description</a>
+                    <a href="">Reviews (0)</a>
+                </div>
+                <div class="ml-0 md:ml-[16rem] pt-10">
+                    <h1 class="text-2xl">More about the product</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac massa eget urna tempor
+                        vehicula vel id nisi. <br>
+                        Pellentesque sed felis auctor, molestie lectus vitae, elementum orci. In et nunc consequat,
+                        semper tellus eget, euismod
+                        quam.</p>
+                </div>
+            </div>
+        </section>
+        <section
+            class="mx-auto bg-[url('/img/bg4mb.jpg')] md:bg-[url('/img/bg4.jpg')] bg-contain bg-no-repeat   container w-full md:w-[1280px]  ml-0 md:ml-[16rem]   mt-10 md:mt-0">
+            <div class=" mx-auto text-white">
+                <div class="text-center pt-[22rem] md:pt-[30rem]">
+                    <h1 class="text-2xl md:text-5xl">NUNC SED JUSTO</h1>
+                    <p class="text-2xl pt-10 pb-5 md:pb-0 text-center">Cras vehicula semper ex, et fermentum tortor
+                        varius eget <br> interdum et <span
+                            class="border-b-0 md:border-b-2 border-red-200 pb-3">malesuada</span> fames ac ante</p>
+                </div>
+                <div class="pt-20 md:pt-56 text-black flex flex-col md:flex-row justify-between  text-center md: ">
+                    <div>
+                        <p class="text-2xl"><span class="border-b-2 border-red-200 pb-3">Pro</span>duct's Features</p>
+                    </div>
+                    <div class="space-y-7 pb-14 mx-2 md:mx-0">
+                        <p class="text-2xl flex flex-col">Lorem ipsum dolor sit amet, consectetur adipiscing <br>
+                            elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+
+                        <p class="flex gap-1 border-b-2 pb-3 text-gray-500"><svg xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 9.563C9 9.252 9.252 9 9.563 9h4.874c.311 0 .563.252.563.563v4.874c0 .311-.252.563-.563.563H9.564A.562.562 0 019 14.437V9.564z" />
+                            </svg>Nunc sed justo at nisi commodo varius</p>
+
+                        <p class="flex gap-1 border-b-2 pb-3 text-left md: text-gray-500"><svg
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 9.563C9 9.252 9.252 9 9.563 9h4.874c.311 0 .563.252.563.563v4.874c0 .311-.252.563-.563.563H9.564A.562.562 0 019 14.437V9.564z" />
+                            </svg>Ut eu urna enim. Curabitur posuere fermentum</p>
+
+                        <p class="flex gap-1  pb-3 text-gray-500"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 9.563C9 9.252 9.252 9 9.563 9h4.874c.311 0 .563.252.563.563v4.874c0 .311-.252.563-.563.563H9.564A.562.562 0 019 14.437V9.564z" />
+                            </svg>Curabitur at orci nec urna aliquet porta</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="mx-auto bg-[url('/img/bg9mb.jpg')] md:bg-[url('/img/bg9.jpg')] bg-contain bg-no-repeat h-full   container w-full md:w-[1280px]  ml-0 md:ml-[16rem]   mt-10 md:mt-0">
+            <div class=" mx-auto text-black">
+                <div class="text-left pt-10 md:pt-[10rem] pl-2 md:pl-16 space-y-5 text-sm md: ">
+                    <h1 class="">LOREM IPSUM DOLOR</h1>
+
+                    <p class="text-2xl md:text-4xl pb-5">Nam bibendum augue <br>
+                        <span class="border-b-2 border-white pb-3">pharetra</span> ultrices
+                    </p>
+
+                    <p class="text-2xl  pb-5 md:pb-0 ">Ut eu urna enim. Curabitur posuere <br>
+                        fermentum libero, pretium dignissim est <br>
+                        lacinia nec. Aenean dapibus ante sed <br>
+                        pharetra scelerisque.</p>
+                </div>
+                <div class="pt-64">
+                    <p class="text-5xl py-5 pb-10">Related products</p>
+                    <div class=" justify-center gap-[1.30rem] grid grid-cols-2 md:grid-cols-4 pb-16  ">
+                        <div>
+                            <a class="absolute ml-4 mt-4 py-1 px-4 bg-white rounded-full text-sm shadow-md shadow-gray-300"
+                                href="">Sale!</a>
+                            <a class="absolute pl-[17rem] pr-5 pt-5 pb-[22rem] opacity-0 hover:opacity-100 duration-300 hidden md:inline-block"
+                                href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                                </svg></a>
+                            <img src="img/13.jpg" alt="">
+                            <img class="w-[70px] pt-3 pb-1" src="img/star.png" alt="">
+                            <a class="" href="">Product Name 1</a>
+                            <p class="font-bold"><del class="font-normal decoration-gray-500 pr-2">$75.00</del> $59.00
+                            </p>
+                        </div>
+                        <div>
+                            <a class="absolute ml-4 mt-4 py-1 px-4 bg-white rounded-full text-sm shadow-md shadow-gray-300"
+                                href="">Sale!</a>
+                            <a class="absolute pl-[17rem] pr-5 pt-5 pb-[22rem] opacity-0 hover:opacity-100 duration-300 hidden md:inline-block"
+                                href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                                </svg></a>
+                            <img src="img/14.jpg" alt="">
+                            <img class="w-[70px] pt-3 pb-1" src="img/star.png" alt="">
+                            <a class="" href="">Product Name 2</a>
+                            <p class="font-bold"><del class="font-normal decoration-gray-500 pr-2">$75.00</del> $59.00
+                            </p>
+                        </div>
+                        <div>
+                            <a class="absolute ml-4 mt-4 py-1 px-4 bg-white rounded-full text-sm shadow-md shadow-gray-300"
+                                href="">Sale!</a>
+                            <a class="absolute pl-[17rem] pr-5 pt-5 pb-[22rem] opacity-0 hover:opacity-100 duration-300 hidden md:inline-block"
+                                href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                                </svg></a>
+                            <img src="img/8.jpg" alt="">
+                            <img class="w-[70px] pt-3 pb-1" src="img/star.png" alt="">
+                            <a class="" href="">Product Name 3</a>
+                            <p class="font-bold"><del class="font-normal decoration-gray-500 pr-2">$75.00</del> $59.00
+                            </p>
+                        </div>
+                        <div>
+                            <a class="absolute ml-4 mt-4 py-1 px-4 bg-white rounded-full text-sm shadow-md shadow-gray-300"
+                                href="">Sale!</a>
+                            <a class="absolute pl-[17rem] pr-5 pt-5 pb-[22rem] opacity-0 hover:opacity-100 duration-300 hidden md:inline-block"
+                                href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                                </svg></a>
+                            <img src="img/product-05.jpg" alt="">
+                            <img class="w-[70px] pt-3 pb-1" src="img/star.png" alt="">
+                            <a class="" href="">Product Name 4</a>
+                            <p class="font-bold"><del class="font-normal decoration-gray-500 pr-2">$75.00</del> $59.00
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    <footer class="bg-[#f6edf0] mb-5 mx-0 md:mx-5">
+        <div class="bg-[#f6edf0] py-10 border-b-2 border-red-100 mt-7 w-full">
+            <div class=" flex flex-col md:flex-row md:justify-evenly ">
+                <div>
+                    <p class="text-2xl pb-10 md:pb-0 pl-4 md:pl-0 ">Subscribe to our newsletter</p>
+                </div>
+                <div class="">
+                    <input class="w-[200px] md:w-[400px] py-1.5 pl-2 text-xl mb-5 md:mb-0 ml-4 md:ml-0" type="email"
+                        placeholder="Your email address" name="" id="">
+                    <a class="bg-black text-white rounded-sm px-4 py-2 text-base hover:bg-[#d4a6b6] duration-300 "
+                        href="">SUBSCRIBE</a>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row  py-5 border-b-2 border-red-100 space-x-28 md:pl-[19rem]">
+            <div class="pr-[25.5rem]">
+                <img src="img/logo-regular.png" alt="">
+            </div>
+            <div class="pb-10 md:pb-0">
+                <ul>
+                    <li><a class="hover:text-gray-600 duration-600" href="">Shop all</a></li>
+                    <li><a class="hover:text-gray-600 duration-600" href="">Makeup</a></li>
+                    <li> <a class="hover:text-gray-600 duration-600" href="">Skin care</a></li>
+                    <li><a class="hover:text-gray-600 duration-600" href="">Hair care</a></li>
+                    <li><a class="hover:text-gray-600 duration-600" href="">About</a></li>
+                    <li><a class="hover:text-gray-600 duration-600" href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="pb-10 md:pb-0">
+                <ul>
+                    <li><a class="hover:text-gray-600 duration-600" href="">Refund Policy</a></li>
+                    <li><a class="hover:text-gray-600 duration-600" href="">Terms & Conditions</a></li>
+                    <li> <a class="hover:text-gray-600 duration-600" href="">FAQ</a></li>
+                    <li><a class="hover:text-gray-600 duration-600" href="">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="flex">
+                <a href=""><img class="w-[25px]" src="img/facebook-svgrepo-com.svg" alt=""></a>
+                <a href=""><img class="w-[25px]" src="img/twitter-154-svgrepo-com.svg" alt=""></a>
+                <a href=""><img class="w-[25px]" src="img/insta-svgrepo-com.svg" alt=""></a>
+
+            </div>
+        </div>
+        <div>
+            <p class="font-extralight text-gray-800 md:pl-[20rem] py-5">Copyright © 2023 <del>Be Bold</del> BLMS |
+                Powered
+                by <del>Be Bold</del> BLMS</p>
+        </div>
+    </footer>
+
+
+
+
+
+    <script>
+        function Menu(e) {
+            let list = document.querySelector('ul');
+            e.name === 'menu' ? (e.name = "close", list.classList.add('top-[0px]'), list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+        }
+    </script>
+</body>
+
+</html>

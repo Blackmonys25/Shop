@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .form-info {
+        @apply pb-2 pl-2 text-2xl  text-black placeholder-black  rounded-r-xl border-2 border-black;
+    }
+
+    .menu-active {
+        @apply hover:text-[#a46177] hover:border-t-2 hover:border-[#a46177] pt-[30px] duration-300;
+    }
+    .menu-mobile {
+        @apply py-3 border-b-2 border-white hover:bg-gray-200 px-6 w-full;
+    }
+    .cart-text {
+        @apply absolute ml-4 mt-4 py-1 px-4 bg-white rounded-full text-sm shadow-md shadow-gray-300;
+    }
+    .cart-svg {
+        @apply absolute pl-[22rem] pr-5 pt-5 pb-[30rem] opacity-0 hover:opacity-100 duration-300 hidden md:inline-block;
+    }
+    .footer-menu {
+        @apply hover:text-gray-600 duration-500;
+    }
+    .shop-cart-svg {
+        @apply absolute pl-[17rem] pr-5 pt-5 pb-[22rem] opacity-0 hover:opacity-100 duration-300 hidden md:inline-block;
+    }
+    .hidden-element {
+        @apply absolute w-[1px] h-[1px] m-[-1px] border-0 p-0 whitespace-nowrap inset-[100%] overflow-hidden;
+    }
+
+}

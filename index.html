@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,200&display=swap"
+    rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body class="font-['DM_Sans'] mx-0 lg:mx-5">
+<header>
+        <div class="flex justify-between pt-5  w-full border-t-2">
+            <div>
+                <a href="index.html"><img class="pl-5 pb-2 z-50" src="img/logo-regular.png" alt=""></a>
+            </div>
+            <nav class="hidden md:block pt-2">
+                <ul class="flex space-x-5">
+                    <li><a class="menu-active" href="shop_all.html">SHOP ALL</a></li>
+                    <li><a class="menu-active" href="makeup.html">MAKEUP</a></li>
+                    <li><a class="menu-active" href="SkinCare.html">SKIN CARE</a></li>
+                    <li><a class="menu-active" href="HairCare.html">HAIR CARE</a></li>
+                    <li><a class="menu-active" href="about.html">ABOUT</a></li>
+                    <li><a class="menu-active" href="contacts.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="hidden md:flex pr-5 space-x-3 pt-2">
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                    class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                </svg></a>
+                <a class="flex gap-2" href="cart.html"><span class="hidden-element">Товаров в корзине на сумму</span>$205<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                    class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                </svg></a>
+            </div>
+
+        <button class="block md:hidden pl-20 pt-1 md:pr-0 focus:outline-none z-40">
+        
+            <span class="text-3xl cursor-pointer md:hidden block">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+        
+            <ul
+                class="md:flex md:flex-col md:items-center z-[-1] md:z-auto md:static absolute bg-gray-200 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-0
+                md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 text-3xl pt-[85px] font-bold rounded-b-xl">
+                <li class="menu-mobile"><a class="" href="index.html">MAIN</a></li>
+                <li class="menu-mobile"><a class="" href="cart.html">ORDER</a></li>
+                <li class="menu-mobile"><a class="" href="shop_all.html">SHOP ALL</a></li>
+                <li class="menu-mobile"><a class="" href="makeup.html">MAKEUP</a></li>
+                <li class="menu-mobile"><a class="" href="SkinCare.html">SKIN CARE</a></li>
+                <li class="menu-mobile"><a class="" href="HairCare.html">HAIR CARE</a></li>
+                <li class="menu-mobile"><a class="" href="about.html">ABOUT</a></li>
+                <li class="menu-mobile"><a class="" href="contacts.html">CONTACT</a></li>
+            </ul>
+        </button>
+
+
+        </div>
+    </header>
+    <main>
+        <div class="bg-[url('/img/hero_mb.jpg')] md:bg-[url('/img/hero.jpg')] bg-cover bg-repeat-round md: bg-scroll md:bg-fixed  h-full md:h-[780px] mt-2 ">
+            <div>
+                <div class="text-left pt-32 md:pt-[15rem] pl-5 md:pl-[15rem] pb-10 md: text-white">
+                    <h1 class="pb-3">NEW IN TOWN</h1>
+                    <p class="font-medium text-4xl md:text-7xl">The New Beauty <br> Collection</p>
+                    <p class="text-2xl pt-3 pb-10">This new collection brings with it the most exciting
+                         <br>lorem ipsum dolor sit amet.</p>
+                    <a class="bg-white rounded-sm py-2.5 px-7 text-black text-base font-light hover:text-[#d4a6b6] duration-300" href="">SHOP NOW</a>
+                </div>
+            </div>
+        </div>
+        <div class="hidden md:flex justify-center mx-auto py-5 ">
+            <div class="swiper ">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper ">
+                    <!-- Slides -->
+                    <div class="swiper-slide border-2">
+                        <div>
+                            <img class="" src="img/logo-001.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide border-2">
+                        <div>
+                            <img class="" src="img/logo-002.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide border-2">
+                        <div>
+                            <img class="" src="img/logo-003.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide border-2">
+                        <div>
+                            <img class="" src="img/logo-004.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide border-2">
+                        <div>
+                            <img class="" src="img/logo-005.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide border-2">
+                        <div>
+                            <img class="" src="img/logo-006.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide border-2">
+                        <div>
+                            <img class="" src="img/logo-007.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide border-2">
+                        <div>
+                            <img class="" src="img/logo-008.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide border-2">
+                        <div>
+                            <img class="" src="img/logo-001.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide border-2">
+                        <div>
+                            <img class="" src="img/logo-002.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination opacity-0"></div>
+            
+                <!-- If we need navigation buttons -->
+            
+            
+                <!-- If we need scrollbar -->
+            
+            </div>  
+        </div>
+        <section class="mt-24 w-full">
+            <div>
+                <div>
+                    <div class="text-center pb-7">
+                        <h1 class="text-sm font-extralight">POPULAR PRODUCTS</h1>
+                        <p class="text-5xl">Trending Now</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 justify-center gap-[3.30rem]">
+                    <div>
+                        <a class="cart-text" href="">Sale!</a>
+                        <a class="cart-svg" href="product_1.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                        </svg></a>
+                        <img src="img/product-04-a.jpg" alt="">
+                        <img class="w-[70px] pt-3 pb-1" src="img/star.png" alt="">
+                        <a class="" href="product_1.html">Product Name 1</a>
+                        <p class="font-bold"><del class="font-normal decoration-gray-500 pr-2">$75.00</del> $59.00</p>
+                    </div>
+                    <div>
+                        <a class="cart-text" href="">Sale!</a>
+                        <a class="cart-svg" href="product_2.html"><svg
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                            </svg></a>
+                        <img src="img/product-2-a.jpg" alt="">
+                        <img class="w-[70px] pt-3 pb-1" src="img/star.png" alt="">
+                        <a class="" href="product_2.html">Product Name 2</a>
+                        <p class="font-bold"><del class="font-normal decoration-gray-500 pr-2">$75.00</del> $59.00</p>
+                    </div>
+                    <div>
+                        <a class="cart-text" href="">Sale!</a>
+                        <a class="cart-svg" href="product_3.html"><svg
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                            </svg></a>
+                        <img src="img/product-01-a.jpg" alt="">
+                        <img class="w-[70px] pt-3 pb-1" src="img/star.png" alt="">
+                        <a class="" href="product_3.html">Product Name 3</a>
+                        <p class="font-bold"><del class="font-normal decoration-gray-500 pr-2">$75.00</del> $59.00</p>
+                    </div>
+                    <div>
+                        <a class="cart-text" href="">Sale!</a>
+                        <a class="cart-svg" href="product_4.html"><svg
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                            </svg></a>
+                        <img src="img/product-3-a.jpg" alt="">
+                        <img class="w-[70px] pt-3 pb-1" src="img/star.png" alt="">
+                        <a class="" href="product_4.html">Product Name 4</a>
+                        <p class="font-bold"><del class="font-normal decoration-gray-500 pr-2">$75.00</del> $59.00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-24 w-full">
+            <div>
+                <div>
+                    <div class="text-center pb-7">
+                        <h1 class="text-sm font-extralight">SHOP</h1>
+                        <p class="text-5xl">Best Selling</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 justify-center gap-[3.30rem]">
+                    <div>
+                        <a class="cart-text" href="">Sale!</a>
+                        <a class="cart-svg" href="product_1.html"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                        </svg></a>
+                        <img src="img/product-04-a.jpg" alt="">
+                        <img class="w-[70px] pt-3 pb-1" src="img/star.png" alt="">
+                        <a class="" href="product_1.html">Product Name 1</a>
+                        <p class="font-bold"><del class="font-normal decoration-gray-500 pr-2">$75.00</del> $59.00</p>
+                    </div>
+                    <div>
+                        <a class="cart-text" href="">Sale!</a>
+                        <a class="cart-svg" href="product_2.html"><svg
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                            </svg></a>
+                        <img src="img/product-2-a.jpg" alt="">
+                        <img class="w-[70px] pt-3 pb-1" src="img/star.png" alt="">
+                        <a class="" href="product_2.html">Product Name 2</a>
+                        <p class="font-bold"><del class="font-normal decoration-gray-500 pr-2">$75.00</del> $59.00</p>
+                    </div>
+                    <div>
+                        <a class="cart-text" href="">Sale!</a>
+                        <a class="cart-svg" href="product_3.html"><svg
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                            </svg></a>
+                        <img src="img/product-01-a.jpg" alt="">
+                        <img class="w-[70px] pt-3 pb-1" src="img/star.png" alt="">
+                        <a class="" href="product_3.html">Product Name 3</a>
+                        <p class="font-bold"><del class="font-normal decoration-gray-500 pr-2">$75.00</del> $59.00</p>
+                    </div>
+                    <div>
+                        <a class="cart-text" href="">Sale!</a>
+                        <a class="cart-svg" href="product_16.html"><svg
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                            </svg></a>
+                        <img src="img/product-05.jpg" alt="">
+                        <img class="w-[70px] pt-3 pb-1" src="img/star.png" alt="">
+                        <a class="" href="product_16.html">Product Name 4</a>
+                        <p class="font-bold"><del class="font-normal decoration-gray-500 pr-2">$75.00</del> $59.00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-10 w-full">
+            <div class="bg-[url('/img/hero_2_mb.jpg')] md:bg-[url('/img/hero_2.jpg')] bg-cover bg-repeat-round bg-scroll md:bg-fixed  h-full md:h-[780px] mt-2 w-full">
+                <div>
+                    <div class="text-left pt-32 pb-10 md: md:pt-[15rem] pl-5 md:pl-[14.5rem] text-white">
+                        <h1 class="pb-3">NEW COLLECTION</h1>
+                        <p class="font-medium text-5xl">The beauty collection 
+                        <br> that makes all the 
+                        <br> difference!</p>
+                        <p class="text-lg pt-3 pb-10">Aliquam vulputate, nunc vitae suscipit aliquet, libero arcu hendrerit <br> sapien.</p>
+                        <a class="bg-white rounded-sm py-2.5 px-7 text-black text-base font-light hover:text-[#d4a6b6] duration-300"
+                            href="">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-20 pb-36">
+            <div class="flex flex-col md:flex-row md:space-x-48">
+                <div class="md:pl-60">
+                    <h1 class="text-gray-500">JAMES OLIVER</h1>
+                    <p class="text-4xl md:text-5xl pt-5">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. <br> <span class="border-b-2 pb-4 border-red-200">Pha</span>sellus posuere...</p>
+                </div>
+                <div class="flex flex-col ">
+                    <div class=" pb-10 pt-10 md:">
+                        <img class="w-[100px] pb-4" src="img/fivestar.png" alt="">
+                        <p class="pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                        Phasellus posuere tincidunt purus, eu consectetur eros sodales <br>
+                        nec. Maecenas ac erat pretium, ultricies nibh quis, mattis massa.</p>
+                        <p class="text-gray-500 text-sm"><span class="border-b-2 border-red-200 pb-4">JAMES</span> OLIVER</p>
+                    </div>
+                    <div class="pb-10">
+                        <img class="w-[100px] pb-4" src="img/fivestar.png" alt="">
+                        <p class="pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                        Phasellus posuere tincidunt purus, eu consectetur eros sodales <br>
+                        nec. Maecenas ac erat pretium, ultricies nibh quis, mattis massa.</p>
+                        <p class="text-gray-500 text-sm"><span class="border-b-2 border-red-200 pb-4">JAMES</span> OLIVER</p>
+                    </div>
+                    <div>
+                        <img class="w-[100px] pb-4" src="img/fivestar.png" alt="">
+                        <p class="pb-4 font-sans ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                        Phasellus posuere tincidunt purus, eu consectetur eros sodales <br>
+                        nec. Maecenas ac erat pretium, ultricies nibh quis, mattis massa.</p>
+                        <p class="text-gray-500 text-sm"><span class="border-b-2 border-red-200 pb-4">JAMES</span> OLIVER</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="hidden md:flex flex-col md:flex-row gap-5 pb-20 w-full">
+                <div class="">
+                    <div class="ml-12  text-white font-medium">
+                    <p class="absolute mt-[15rem]">NEW COLLECTIONS</p>
+                    <p class="absolute mt-60 text-5xl pt-6">Awesome Makeup <br> Kit Gift SetsS</p>
+                    <p class="absolute mt-[23rem] text-2xl">Find your unique style</p>
+                        <a class="bg-white mt-[26rem] absolute rounded-sm py-2.5 px-7 text-black text-base font-light hover:text-[#d4a6b6] duration-300"href="">SHOP NOW</a>
+                    </div>
+                    <img class="" src="img/bg-001.jpg" alt="">
+                </div>
+                <div class="">
+                    <div class="ml-12  text-white font-medium">
+                    <p class="absolute mt-[15rem]">NEW COLLECTIONS</p>
+                    <p class="absolute mt-60 text-5xl pt-6">The Ultimate <br> Skincare Regime</p>
+                    <p class="absolute mt-[23rem] text-2xl">Find your unique style</p>
+                        <a class="bg-white mt-[26rem] absolute rounded-sm py-2.5 px-7 text-black text-base font-light hover:text-[#d4a6b6] duration-300"href="">SHOP NOW</a>
+                    </div>
+                    <img class="" src="img/bg-02.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="flex flex-col md:flex-row pb-10 md:pl-64 gap-6 space-x-6 w-full">
+                <div>
+                    <h1 class="pt-3 text-sm md:pr-40 text-center md:"><span class="border-b-2 border-red-200 pb-4">WHY C</span>HOOSE US</h1>
+                </div>
+                <div>
+                    <div class="flex text-2xl">
+                    <img class="w-[40px]  bg-[#d4a6b6] rounded-full hover:bg-black duration-500 ml-5" src="img/delivery-fast-svgrepo-com.svg" alt="">
+                    <h1 class=" pt-1 pl-1">Fast Delivery</h1>
+                    </div>
+                    <p class=" pt-5 ml-[4.1rem] text-gray-700 font-extralight ">Lorem ipsum dolor sit amet,<br>
+                     consectetur adipiscing elit. Ut <br>
+                      elit tellus, luctus nec <br>
+                       ullamcorper mattis.</p>
+                </div>
+                <div>
+                    <div class="flex text-2xl">
+                    <img class="w-[40px] bg-[#d4a6b6] rounded-full hover:bg-black duration-500 ml-5" src="img/shipping-svgrepo-com (1).svg" alt="">
+                    <h1 class="pt-1 pl-1">Free Shipping</h1>
+                    </div>
+                    <p class=" pt-5 ml-[4.1rem] text-gray-700 font-extralight ">Lorem ipsum dolor sit amet,<br>
+                     consectetur adipiscing elit. Ut <br>
+                      elit tellus, luctus nec <br>
+                       ullamcorper mattis.</p>
+                </div>
+                <div>
+                    <div class="flex text-2xl">
+                    <img class="w-[40px] bg-[#d4a6b6] rounded-full hover:bg-black duration-500 ml-5" src="img/arrow-sm-left-svgrepo-com.svg" alt="">
+                    <h1 class="pt-1 pl-1">Easy Returns</h1>
+                    </div>
+                    <p class=" pt-5 ml-[4.1rem] text-gray-700 font-extralight ">Lorem ipsum dolor sit amet,<br>
+                     consectetur adipiscing elit. Ut <br>
+                      elit tellus, luctus nec <br>
+                       ullamcorper mattis.</p>
+                </div>
+            </div>
+        </section>
+        <footer class="bg-[#f6edf0] mb-5 w-full">
+            <div class="bg-[#f6edf0] py-10 border-b-2 border-red-100 mt-7 w-full">
+                <div class=" flex flex-col md:flex-row md:justify-evenly ">
+                    <div>
+                        <p class="text-2xl pb-10 md:">Subscribe to our newsletter</p>
+                    </div>
+                    <form class="flex items-center ">
+                        <label class="" for="email"><span class="hidden-element">Ваша почта</span></label>
+                        <input tabindex="2" class="w-[200px] md:w-[400px] py-1.5 pl-2 text-xl mb-0 ml-4 md:ml-0" required minlength="6" type="email"
+                            placeholder="Your email address" name="mail" id="email">
+
+                            <button class="bg-black text-white rounded-sm px-4 py-2 text-base hover:bg-[#d4a6b6] duration-300" type="submit">SUBSCRIBE</button>
+                    </form>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row  py-5 border-b-2 border-red-100 space-x-28 md:pl-[20rem]">
+                <div class="pr-[25.5rem]">
+                    <img src="img/logo-regular.png" alt="">
+                </div>
+                <div class="pb-10 md:pb-0">
+                    <ul>
+                        <li><a class="footer-menu"  href="">Shop all</a></li>
+                        <li><a class="footer-menu" href="">Makeup</a></li>
+                        <li><a class="footer-menu" href="">Skin care</a></li>
+                        <li><a class="footer-menu" href="">Hair care</a></li>
+                        <li><a class="footer-menu" href="">About</a></li>
+                        <li><a class="footer-menu" href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="pb-10 md:pb-0">
+                    <ul>
+                        <li><a class="footer-menu"  href="">Refund Policy</a></li>
+                        <li><a class="footer-menu" href="">Terms & Conditions</a></li>
+                        <li><a class="footer-menu" href="">FAQ</a></li>
+                        <li><a class="footer-menu" href="">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="flex">
+                    <a href=""><img class="w-[25px]" src="img/facebook-svgrepo-com.svg" alt=""></a>
+                    <a href=""><img class="w-[25px]" src="img/twitter-154-svgrepo-com.svg" alt=""></a>
+                    <a href=""><img class="w-[25px]" src="img/insta-svgrepo-com.svg" alt=""></a>
+
+                </div>
+            </div>
+            <div >
+                <p class="font-extralight text-gray-800 md:pl-[20rem] py-5">Copyright © 2023 <del>Be Bold</del> BLMS | Powered by <del>Be Bold</del> BLMS</p>
+            </div>
+        </footer>
+    </main>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+
+
+            slidesPerView: 6,
+            speed: 1000,
+            loop: true,
+            spaceBetween: 40,
+            autoplay: {
+                delay: 300,
+            },
+
+
+            pagination: {
+                el: '.swiper-pagination',
+                
+            },
+
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+
+    <script>
+        function Menu(e) {
+            let list = document.querySelector('ul');
+            e.name === 'menu' ? (e.name = "close", list.classList.add('top-[0px]'), list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+        }
+    </script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
